@@ -1,0 +1,50 @@
+{
+  "expo": {
+    "name": "ForEvApp",
+    "displayName": "ForEv",
+    "slug": "forev",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icononly.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash2.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.forev.appui"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/LOGO.png",
+        "backgroundColor": "#ffffff"
+      },
+      "permissions": [
+        "android.permission.ACCESS_COARSE_LOCATION",
+        "android.permission.ACCESS_FINE_LOCATION",
+        "android.permission.FOREGROUND_SERVICE"
+      ],
+      "package": "com.forev.appui"
+    },
+    "web": {
+      "favicon": "./assets/icononly.png"
+    },
+    "plugins": [
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "Allow ForEv to use your location."
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "d64d8af4-b571-434e-8372-cb6a35c043c2"
+      }
+    },
+    "owner": "thabumon"
+  }
+}
